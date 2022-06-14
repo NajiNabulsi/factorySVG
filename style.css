@@ -1,0 +1,79 @@
+body {
+  background-color: #474747;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#path2008 {
+  fill: #a30c0c;
+  animation: box 3s infinite linear;
+}
+
+#g2751,
+#g2755,
+#g2761 {
+  animation: wheel 1s infinite linear;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+/* rotate at z axcess */
+@keyframes wheel {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#leight {
+  animation: pulse 2s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    fill: #ff1302;
+  }
+
+  50% {
+    fill: #424141;
+  }
+}
+
+#box {
+  animation: box 3s infinite ease-in;
+}
+
+@keyframes box {
+  from {
+    transform: translateX(-10px);
+    fill: #382020;
+  }
+  to {
+    transform: translateX(300px);
+    fill: #f3d68e;
+  }
+}
+
+/* move from one postion to anothre*/
+/* @keyframes wheel {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 0);
+  }
+
+  80% {
+    transform: translate(-150px, 0);
+  }
+} */
